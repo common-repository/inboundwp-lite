@@ -1,0 +1,381 @@
+/******** General CSS *********/
+.dcdt-clearfix:before, .dcdt-clearfix:after{content: "";display: table;}
+.dcdt-clearfix::after{clear: both;}
+.dcdt-countdown-timer{margin: 0 auto;}
+.dcdt-countdown-wrp { margin: 15px 0; }
+.dcdt-error{color: #a94442;}
+.dcdt-hide{display:none;}
+
+/**** Sold Out Product Progress Bar CSS ****/
+.dcdt-product-in-stock { display: block; margin-bottom: 15px; }
+.dcdt-product-in-stock span { font-size: 16px; }
+.dcdt-product-in-stock span b { color: #DC3232; }
+.dcdt-stock-proress-bar { height: 12px; overflow: hidden; background-color: #eaeaea; border-radius: 4px; -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1); box-shadow: inset 0 1px 2px rgba(0,0,0,.1); max-width: 320px;}
+.dcdt-stock-proress-bar .progress-bar { float: left; width: 0; height: 100%; font-size: 12px; line-height: 12px; color: #fff; text-align: center; background-color: #DC3232; -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15); box-shadow: inset 0 -1px 0 rgba(0,0,0,.15); -webkit-transition: width .6s ease; -o-transition: width .6s ease; transition: width .6s ease; -webkit-animation: dcdt-progress-bar-stripes 2s linear infinite; animation: dcdt-progress-bar-stripes 2s linear infinite; -moz-animation: dcdt-progress-bar-stripes 2s linear infinite; }
+.dcdt-stock-proress-bar .dcdt-progress-bar-inn { background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.3) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent); background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.3) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent); background-size: 20px 20px; }
+@-webkit-keyframes dcdt-progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+
+@-o-keyframes dcdt-progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+
+@keyframes dcdt-progress-bar-stripes {
+    from {
+        background-position: 40px 0
+    }
+    to {
+        background-position: 0 0
+    }
+}
+
+/********** Vertical Flip Design CSS *********/
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock{width:100%;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock:before,
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock:after{content: " ";display: table;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock:after{clear: both;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock *{-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;-ms-backface-visibility: hidden;-o-backface-visibility: hidden;backface-visibility: hidden;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock .ce-unit-wrap{margin-right: 10px;display:inline-block;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock .ce-unit-wrap>div:before,
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock .ce-unit-wrap>div:after{content: " ";display: table;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock .ce-unit-wrap>div:after{clear: both;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock .ce-unit-wrap>span{display: block;margin-top: 5px;text-align: center;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.flip-wrap{cursor: pointer;text-decoration: none;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.flip-wrap:hover{color: #fff;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock.clearfix:before,
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock.wrap:before,
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock.clearfix:after,
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock.wrap:after{content: " ";display: table;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock.clearfix:after,
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock.wrap:after{clear: both;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits{float: left;margin-right: 4px;position: relative; list-style: none;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner{height: 100%;left: 0;position: absolute;top: 0;width: 100%;z-index: 1;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner:first-child{z-index: 2;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap{cursor: default !important;display: block;height: 100%;margin: 0 !important;overflow: visible !important;-webkit-perspective: 300px;-moz-perspective: 300px;perspective: 300px;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div{height: 50%;left: 0;outline: 1px solid transparent;overflow: hidden;position: absolute;width: 100%;z-index: 1;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div .shadow{height: 100%;position: absolute;width: 100%;z-index: 2;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div.up{-webkit-transform-origin: 50% 100%;-moz-transform-origin: 50% 100%;-ms-transform-origin: 50% 100%;-o-transform-origin: 50% 100%;transform-origin: 50% 100%;top: 0;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div.up:after{background-color: #000;background-color: rgba(0, 0, 0, 0.4);content: "";height: 2px;left: 0;position: absolute;top: 73px;width: 100%;z-index: 5;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div.down{bottom: 0;-webkit-transform-origin: 50% 0;-moz-transform-origin: 50% 0;-ms-transform-origin: 50% 0;-o-transform-origin: 50% 0;transform-origin: 50% 0;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div div.inn{height: 200%;left: 0;position: absolute;text-align: center;text-shadow: 0 1px 2px #000;width: 100%;z-index: 1;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div.up div.inn{top: 0;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div.down div.inn{bottom: 0;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.play div.digits-inner.before{z-index: 3;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.play div.digits-inner.active{-webkit-animation: asd 0.5s 0.5s linear both;-moz-animation: asd 0.5s 0.5s linear both;animation: asd 0.5s 0.5s linear both;z-index: 5;}
+
+@-webkit-keyframes asd{
+	0%{z-index: 2;}
+	20%{z-index: 4;}
+	100%{z-index: 4;}
+}
+
+@-moz-keyframes asd{
+	0%{z-index: 2;}
+	20%{z-index: 4;}
+	100%{z-index: 4;}
+}
+
+@-o-keyframes asd{
+	0%{z-index: 2;}
+	20%{z-index: 4;}
+	100%{z-index: 4;}
+}
+
+@keyframes asd{
+	0%{z-index: 2;}
+	20%{z-index: 4;}
+	100%{z-index: 4;}
+}
+
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.play div.digits-inner.active .down{-webkit-animation: turn 0.5s 0.5s linear both;-moz-animation: turn 0.5s 0.5s linear both;animation: turn 0.5s 0.5s linear both;z-index: 2;}
+
+@-webkit-keyframes turn{
+	0%{-webkit-transform: rotateX(90deg);}
+	100%{-webkit-transform: rotateX(0deg);}
+}
+
+@-moz-keyframes turn{
+	0%{-moz-transform: rotateX(90deg);}
+	100%{-moz-transform: rotateX(0deg);}
+}
+
+@-o-keyframes turn{
+	0%{-o-transform: rotateX(90deg);}
+	100%{-o-transform: rotateX(0deg);}
+}
+
+@keyframes turn{
+	0%{transform: rotateX(90deg);}
+	100%{transform: rotateX(0deg);}
+}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.play div.digits-inner.before .up{-webkit-animation: turn2 0.5s linear both;-moz-animation: turn2 0.5s linear both;animation: turn2 0.5s linear both;z-index: 2;}
+
+@-webkit-keyframes turn2{
+	0%{-webkit-transform: rotateX(0deg);}
+	100%{-webkit-transform: rotateX(-90deg);}
+}
+
+@-moz-keyframes turn2{
+	0%{-moz-transform: rotateX(0deg);}
+	100%{-moz-transform: rotateX(-90deg);}
+}
+
+@-o-keyframes turn2{
+	0%{-o-transform: rotateX(0deg);}
+	100%{-o-transform: rotateX(-90deg);}
+}
+
+@keyframes turn2{
+	0%{transform: rotateX(0deg);}
+	100%{transform: rotateX(-90deg);}
+}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div div.digits-inner.active{z-index: 3;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.play div.digits-inner.before .up .shadow{-webkit-animation: show 0.5s linear both;-moz-animation: show 0.5s linear both;animation: show 0.5s linear both;background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, #000 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, #000));background: linear, top, rgba(0, 0, 0, 0.1) 0%, #000 100%;background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, #000 100%);background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, #000 100%);background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, #000 100%;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.play div.digits-inner.active .up .shadow{-webkit-animation: hide 0.5s 0.3s linear both;-moz-animation: hide 0.5s 0.3s linear both;animation: hide 0.5s 0.3s linear both;background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, #000 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.1)), color-stop(100%, #000));background: linear, top, rgba(0, 0, 0, 0.1) 0%, #000 100%;background: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, #000 100%);background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.1) 0%, #000 100%);background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, #000 100%;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.play div.digits-inner.before .down .shadow{-webkit-animation: show 0.5s linear both;-moz-animation: show 0.5s linear both;animation: show 0.5s linear both;background: -moz-linear-gradient(top, #000 0%, rgba(0, 0, 0, 0.1) 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000), color-stop(100%, rgba(0, 0, 0, 0.1)));background: linear, top, #000 0%, rgba(0, 0, 0, 0.1) 100%;background: -o-linear-gradient(top, #000 0%, rgba(0, 0, 0, 0.1) 100%);background: -ms-linear-gradient(top, #000 0%, rgba(0, 0, 0, 0.1) 100%);background: linear, to bottom, #000 0%, rgba(0, 0, 0, 0.1) 100%;}
+.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.play div.digits-inner.active .down .shadow{-webkit-animation: hide 0.5s 0.3s linear both;-moz-animation: hide 0.5s 0.3s linear both;animation: hide 0.5s 0.2s linear both;background: -moz-linear-gradient(top, #000 0%, rgba(0, 0, 0, 0.1) 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000), color-stop(100%, rgba(0, 0, 0, 0.1)));background: linear, top, #000 0%, rgba(0, 0, 0, 0.1) 100%;background: -o-linear-gradient(top, #000 0%, rgba(0, 0, 0, 0.1) 100%);background: -ms-linear-gradient(top, #000 0%, rgba(0, 0, 0, 0.1) 100%);background: linear, to bottom, #000 0%, rgba(0, 0, 0, 0.1) 100%;}
+
+@-webkit-keyframes show{
+	0%{opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+	100%{opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+}
+
+@-moz-keyframes show{
+	0%{opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+	100%{opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+}
+
+@-o-keyframes show{
+	0%{opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+	100%{opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+}
+
+@keyframes show{
+	0%{opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+	100%{opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+}
+
+@-webkit-keyframes hide{
+	0%{opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+	100%{opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+}
+
+@-moz-keyframes hide{
+	0%{opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+	100%{opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+}
+
+@-o-keyframes hide{
+	0%{opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+	100%{opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+}
+
+@keyframes hide{
+	0%{opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
+	100%{opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+}
+
+@media all and (max-width: 980px){
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock .ce-unit-wrap>span{font-size: 1em;margin: .66666666666667em 0 0;}
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits{font-size: 70px;height: 100px;line-height: 100px;margin: 0 2px;width: 50px;}
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div{font-size: 70px;}
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div.up:after{height: 2px;top: 48px;}
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div div.inn{font-size: 70px;left: 0;}
+}
+
+@media all and (max-width: 641px){
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock .ce-unit-wrap > span{font-size: 1em;margin: .5em 0 0;}
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div{font-size: 40px;}
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div.up:after{height: 2px;top: 33px;}
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div div.inn{font-size: 40px;left: 0;}
+}
+
+@media all and (max-width: 500px){
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock .ce-unit-wrap>span{font-size: .75em;margin: .5em 0 0;}
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div{font-size: 30px;}
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div.up:after{height: 2px;top: 24px;}
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits div.digits-inner div.flip-wrap div div.inn{font-size: 30px;left: 0;}
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock { text-align: center; }
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits { height: 45px;line-height: 45px;width: 25px; }
+}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock { text-align: center; }
+	.dcdt-countdown-timer-vertical-flip .dcdt-vf-clock div.digits{height: 45px;line-height: 45px;width: 35px;}
+}
+
+/********** Circle & Circle Fill Style CSS *******/
+.dcdt-countdown-timer-cf { float: left;}
+.dcdt-countdown-timer-cf .dcdt-clock .ce-col{display: inline-block;margin-right:10px;text-align: center;}
+.dcdt-countdown-timer-cf .dcdt-clock .dcdt-timer-digits {display: block;font-weight: 300;margin-bottom: 5px}
+html:not([class*='ce-ie']) .dcdt-countdown-timer-cf .dcdt-clock .dcdt-timer-digits {-webkit-perspective: 1000px;-moz-perspective: 1000px;-ms-perspective: 1000px;perspective: 1000px;}
+.dcdt-countdown-timer-cf .dcdt-clock .ce-flip-wrap{position: relative;}
+html:not([class*='ce-ie']) .dcdt-countdown-timer-cf .dcdt-clock .ce-flip-wrap{-webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-ms-transform-style: preserve-3d;transform-style: preserve-3d;-webkit-transition: 0s;-moz-transition: 0s;transition: 0s;}
+html:not([class*='ce-ie']) .dcdt-countdown-timer-cf .dcdt-clock .ce-animate .ce-flip-wrap{-webkit-transform: rotateY(180deg);-moz-transform: rotateY(180deg);-ms-transform: rotateY(180deg);transform: rotateY(180deg);-webkit-transition: 0.6s;-moz-transition: 0.6s;transition: 0.6s;}
+.dcdt-countdown-timer-cf .dcdt-clock .ce-flip-wrap .ce-flip-front,
+.dcdt-countdown-timer-cf .dcdt-clock .ce-flip-wrap .ce-flip-back{left: 0;position: absolute;top: 0;width: 100%;border-radius:100%;}
+html:not([class*='ce-ie']) .dcdt-countdown-timer-cf .dcdt-clock .ce-flip-wrap .ce-flip-front,
+html:not([class*='ce-ie']) .dcdt-countdown-timer-cf .dcdt-clock .ce-flip-wrap .ce-flip-back{-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;backface-visibility: hidden;}
+html:not([class*='ce-ie']) .dcdt-countdown-timer-cf .dcdt-clock .ce-flip-wrap .ce-flip-back{-webkit-transform: rotateY(180deg);-moz-transform: rotateY(180deg);-ms-transform: rotateY(180deg);transform: rotateY(180deg);}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.dcdt-countdown-timer-cf { text-align: center; }
+	.dcdt-countdown-timer-cf .dcdt-clock .ce-col { margin-right: 5px; width: 65px; }
+	.dcdt-countdown-timer-cf .dcdt-clock .dcdt-timer-digits { font-size: 25px; height: 65px; line-height: 65px; margin-bottom: 5px; }
+	.dcdt-countdown-timer-cf .dcdt-clock .ce-flip-wrap .ce-flip-front, 
+	.dcdt-countdown-timer-cf .dcdt-clock .ce-flip-wrap .ce-flip-back { height: 65px; }
+	.dcdt-countdown-timer-cf .dcdt-clock .dcdt-timer-label { font-size: 15px; }
+}
+
+@media screen and (min-width: 480px) and (max-width: 640px) {
+	.dcdt-countdown-timer-cf { text-align: center; }
+	.dcdt-countdown-timer-cf .dcdt-clock .ce-col { width: 80px; }
+	.dcdt-countdown-timer-cf .dcdt-clock .dcdt-timer-digits { font-size: 25px; height: 80px; line-height: 80px; margin-bottom: 5px; }
+	.dcdt-countdown-timer-cf .dcdt-clock .ce-flip-wrap .ce-flip-front, 
+	.dcdt-countdown-timer-cf .dcdt-clock .ce-flip-wrap .ce-flip-back { height: 80px; }
+	.dcdt-countdown-timer-cf .dcdt-clock .dcdt-timer-label { font-size: 15px; }
+}
+
+/***** Square & Square Fill Style CSS *****/
+.dcdt-countdown-timer-sf {width: 100%;float: left;clear: both;}
+/*.dcdt-countdown-timer-sf .dcdt-clock { float: left;width: 100%; }*/
+.dcdt-countdown-timer-sf .dcdt-clock .ce-col{display: inline-block;margin-right:10px;float: left;text-align: center; }
+.dcdt-countdown-timer-sf .dcdt-clock .ce-col:last-child { margin-right: 0; }
+.dcdt-countdown-timer-sf .dcdt-clock .dcdt-timer-digits {display: block;font-weight: 300;margin-bottom: 5px}
+html:not([class*='ce-ie']) .dcdt-countdown-timer-sf .dcdt-clock .dcdt-timer-digits {-webkit-perspective: 1000px;-moz-perspective: 1000px;-ms-perspective: 1000px;perspective: 1000px;}
+.dcdt-countdown-timer-sf .dcdt-clock .ce-flip-wrap{position: relative;}
+html:not([class*='ce-ie']) .dcdt-countdown-timer-sf .dcdt-clock .ce-flip-wrap{-webkit-transform-style: preserve-3d;-moz-transform-style: preserve-3d;-ms-transform-style: preserve-3d;transform-style: preserve-3d;-webkit-transition: 0s;-moz-transition: 0s;transition: 0s;}
+html:not([class*='ce-ie']) .dcdt-countdown-timer-sf .dcdt-clock .ce-animate .ce-flip-wrap{-webkit-transform: rotateY(180deg);-moz-transform: rotateY(180deg);-ms-transform: rotateY(180deg);transform: rotateY(180deg);-webkit-transition: 0.6s;-moz-transition: 0.6s;transition: 0.6s;}
+.dcdt-countdown-timer-sf .dcdt-clock .ce-flip-wrap .ce-flip-front,
+.dcdt-countdown-timer-sf .dcdt-clock .ce-flip-wrap .ce-flip-back{left: 0;position: absolute;top: 0;width: 100%;}
+html:not([class*='ce-ie']) .dcdt-countdown-timer-sf .dcdt-clock .ce-flip-wrap .ce-flip-front,
+html:not([class*='ce-ie']) .dcdt-countdown-timer-sf .dcdt-clock .ce-flip-wrap .ce-flip-back{-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;backface-visibility: hidden;}
+html:not([class*='ce-ie']) .dcdt-countdown-timer-sf .dcdt-clock .ce-flip-wrap .ce-flip-back{-webkit-transform: rotateY(180deg);-moz-transform: rotateY(180deg);-ms-transform: rotateY(180deg);transform: rotateY(180deg);}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+	.dcdt-countdown-timer-sf .dcdt-clock { text-align: center; }
+	.dcdt-countdown-timer-sf .dcdt-clock .ce-col { margin-right: 10px; width: 65px; float: none;}
+	.dcdt-countdown-timer-sf .dcdt-clock .dcdt-timer-digits { font-size: 25px; height: 65px; line-height: 65px; margin-bottom: 5px; }
+	.dcdt-countdown-timer-sf .dcdt-clock .ce-flip-wrap .ce-flip-front, 
+	.dcdt-countdown-timer-sf .dcdt-clock .ce-flip-wrap .ce-flip-back { height: 65px; }
+	.dcdt-countdown-timer-sf .dcdt-clock .dcdt-timer-label { font-size: 15px; }
+}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+	.dcdt-countdown-timer-sf .dcdt-clock { text-align: center; }
+	.dcdt-countdown-timer-sf .dcdt-clock .ce-col { margin-right: 20px; width: 75px; float: none;}
+}
+
+/******* Simple Clock Design CSS ******/
+.dcdt-countdown-timer-simple .dcdt-clock { display: inline-block; padding: 10px; text-align: center; }
+.dcdt-countdown-timer-simple .dcdt-timer-description{margin:0 auto;}
+.dcdt-countdown-timer-simple .ce-col{float:left; line-height: normal;position:relative;}
+.dcdt-countdown-timer-simple .dcdt-timer-digits { line-height: normal; }
+.dcdt-countdown-timer-simple .ce-col i{font-style: normal;position: absolute;vertical-align: bottom;right: -5px;top: 0; line-height: normal;}
+.dcdt-countdown-timer-simple .dcdt-timer-label {display:block;font-size: 14px;}
+
+@media all and (max-width: 980px){
+	
+	.dcdt-countdown-timer-simple .ce-col:nth-child(2) i{display:none;}
+}
+@media all and (max-width: 640px){
+	.dcdt-countdown-timer-simple .dcdt-clock { height: 85px; }
+	.dcdt-countdown-timer-simple .ce-col i{display:none;}
+}
+
+/******** Simple 2 Clock CSS *********/
+.dcdt-countdown-timer-simple-2 .dcdt-clock { padding: 15px;text-align:center; }
+.dcdt-countdown-timer-simple-2 .ce-col{display:inline-block;padding-right: 8px;line-height: normal; width: auto;}
+.dcdt-countdown-timer-simple-2 .dcdt-timer-digits { line-height: normal; height: auto; }
+.dcdt-countdown-timer-simple-2 .ce-col:last-child{padding-right: 0;}
+.dcdt-countdown-timer-simple-2 .dcdt-clock span{font-weight: 900}
+@media all and (max-width: 980px){
+	.dcdt-countdown-timer-simple-2 .dcdt-timer-label {font-size: 20px;font-weight: 700 !important;}
+}
+@media all and (max-width: 640px){
+	.dcdt-countdown-timer-simple-2 .dcdt-clock { float: left; }
+	.dcdt-countdown-timer-simple-2 .ce-col{ width:100%;float:left;text-align: center;padding-right: 0; }
+}
+
+/******* EDD Sale Icon CSS ********/
+.single-download .edd-download { position: relative; }
+.single-download .edd-download .dcdt-edd-sale-flash-icon,
+.single-download .edd-download .dcdt-edd-sale-ribbon-icon { display: inline-block; position: absolute; top: 20%; }
+.edd-download .dcdt-edd-sale-flash-icon span { display: inline-block; width: 60px; border-radius: 100%; height: 60px; text-align: center; line-height: 60px; }
+.edd-download .dcdt-edd-sale-ribbon-icon span { display: inline-block; }
+
+/******* Sale Product Slider *******/
+.dcdt-on-sale-products .dcdt-product-for { background: #f5f5f5; padding: 0;}
+.dcdt-on-sale-products .dcdt-product-for .on-sale-slide { outline: none; }
+.dcdt-on-sale-products .dcdt-product-for .dcdt-timer-circle { display: table; width: 100%; }
+.dcdt-on-sale-products .dcdt-product-for .dcdt-timer-circle:focus { outline: none; }
+.dcdt-on-sale-products .dcdt-product-for .woocommerce-product-gallery { padding: 0; display: table-cell; vertical-align: middle; float: none; background-size: cover; background-position: center; background-repeat: no-repeat; }
+.dcdt-on-sale-products .dcdt-product-for .dcdt-product-description { padding: 15px; display: table-cell; vertical-align: middle; float: none; }
+.dcdt-on-sale-products .dcdt-product-for h3,
+.dcdt-on-sale-products .dcdt-product-for p,
+.dcdt-on-sale-products .dcdt-product-for .cart-botton-home { margin: 15px 0; line-height: normal; }
+.dcdt-on-sale-products .dcdt-product-for .dcdt-product-description .price ins { background: transparent; }
+
+.dcdt-product-for {visibility: hidden; opacity:0; transition:opacity 0.5s linear; }
+.dcdt-product-for.slick-initialized { visibility: visible; opacity:1; }
+.dcdt-product-for .slick-arrow,
+.wpsisac-slider-nav .slick-arrow { text-indent:-99999px; }
+.dcdt-product-for .slick-arrow { width:35px; height:35px; position:absolute; z-index:9; border:0px !important;padding:0 !important; margin:0px !important; border-radius:0 !important;-webkit-transition: 0.3s ease-in;transition:0.3s ease-in; cursor:pointer; top: 50%; transform: translateY(-50%); -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); }
+.dcdt-product-for .slick-next, 
+.dcdt-product-for button.slick-next:hover, 
+.dcdt-product-for button.slick-next:focus, 
+.dcdt-product-for button.slick-next:active { background:rgb(0, 0, 0) url('../images/arrow-right.png') center center no-repeat !important;outline:none !important;box-shadow: none !important;border: 0 !important; right: 0; }
+.dcdt-product-for button.slick-prev, 
+.dcdt-product-for button.slick-prev:hover, 
+.dcdt-product-for button.slick-prev:focus, 
+.dcdt-product-for button.slick-prev:active { background:rgb(0, 0, 0) url('../images/arrow-left.png') center center no-repeat !important;outline:none !important;box-shadow: none !important; left: 0; }
+
+/****** DOTS ******/
+.dcdt-slick .slick-dots {padding:0; margin:0; position:absolute;  text-align:center;}
+.dcdt-slick .slick-dots li button {text-indent:-99999px;}
+.dcdt-slick .slick-dots li {list-style:none; display:inline-block; margin:0 3px; padding:0px;line-height: 0;}
+.dcdt-slick ul.slick-dots li:before, 
+.dcdt-slick ul.slick-dots li:after {background:none;content:none;}
+.dcdt-slick .slick-dots li button {background: #fff; margin: 0px;padding: 0px;border: 2px solid #000000;border-radius: 50%;width: 13px;height: 13px; box-shadow: none; cursor:pointer;}
+.dcdt-slick .slick-dots li button:focus {outline:none;}
+.dcdt-slick .slick-dots li.slick-active button {background:#000000;}
+.dcdt-slick .slick-dots {left:0; right:0; text-align:center; bottom:10px; line-height: 0;}
+
+.dcdt-column,
+.dcdt-columns {  padding-left: 0.9375em;  padding-right: 0.9375em;  width: 100%;  float: left; position: relative;  }
+
+@media only screen {
+	.dcdt-column,  .dcdt-columns {position: relative;padding-left: 0.9375em;padding-right: 0.9375em; float: left; }
+}
+@media only screen and (min-width: 40.0625em) { 
+		
+	.dcdt-col-1 { width: 8.33333%; }
+	.dcdt-col-2 { width: 16.66667%; }
+	.dcdt-col-3 { width: 25%; }
+	.dcdt-col-4 { width: 33.33333%; }
+	.dcdt-col-5 { width: 41.66667%; }
+	.dcdt-col-6 { width: 50%; }
+	.dcdt-col-7 { width: 58.33333%; }
+	.dcdt-col-8 { width: 66.66667%; }
+	.dcdt-col-9 { width: 75%; }
+	.dcdt-col-10 { width: 83.33333%; }
+	.dcdt-col-11 { width: 91.66667%; }
+	.dcdt-col-12 { width: 100%; }
+	.dcdt-col-5c { width: 20%; }
+}
+
+@media only screen and (max-width: 767px) {
+	.dcdt-on-sale-products .dcdt-product-for .on-sale-slide { display: block !important; }
+	.dcdt-on-sale-products .dcdt-product-for .woocommerce-product-gallery { display: block; width: 100%; height: 300px; }
+}

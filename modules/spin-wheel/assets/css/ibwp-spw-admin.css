@@ -1,0 +1,27 @@
+/* General CSS */
+#ibwp-spw-wheel-sett .inside{margin: 0; padding: 0;}
+#ibwp-spw-wheel-sett .inside .ibwp-vtab-wrap{border: 0;}
+#ibwp-spw-wheel-sett .form-table th{width: 170px;}
+.ibwp-spw-form-entries-wrap .wp-list-table .column-id{width: 80px;}
+
+/* Drag & Drop CSS */
+.ibwp-spw-drag-highlight{height: 350px; width:100%; background-color: #fcf67b; border: 2px dotted #d1c606; position: relative;}
+.ibwp-spw-drag-highlight::before{content:'Drop Here'; line-height:0; display:block; text-align:center; position:absolute; top: 50%; left: 0; right: 0; font-weight: bold; font-size: 20px;}
+.ibwp-spw-segment-row-highlight{height: 40px;}
+.ibwp-spw-segment-row-highlight::before{font-size: 14px;}
+
+/* Wheel Segment CSS */
+.ibwp-spw-segment-tbl{counter-reset: segment;}
+.ibwp-spw-segment-tbl .ibwp-spw-segment-no::before{counter-increment: segment; content: counter(segment);}
+.ibwp-spw-segment-row-inr{margin: 10px 0;}
+.ibwp-spw-segment-header{background-color: #f1f1f1; border: 1px solid #e5e5e5; display: table; width: 100%; cursor: pointer;}
+.ibwp-spw-segment-header:hover{background-color: #ccd0d4; border-color: #7e8993;}
+.ibwp-spw-segment-row-data{display: none; background: #f9f9f9; padding: 8px; border-width: 0 1px 1px; border-style: solid; border-color: #e5e5e5;}
+.ibwp-spw-segment-active .ibwp-spw-segment-header{background-color: #ccd0d4; border-color: #7e8993;}
+.ibwp-spw-segment-active .ibwp-spw-segment-row-data{border-color: #7e8993;}
+.ibwp-spw-segment-title{padding: 8px; box-sizing: border-box; font-weight: 600;}
+.ibwp-spw-segment-info{display: inline-block; margin-left: 30px; font-weight: normal; font-size: 12px;}
+.ibwp-spw-segment-row-actions{float: right; text-align: right; padding: 8px; box-sizing: border-box; color: #777; font-size: 12px;}
+.ibwp-spw-segment-act-btn{font-size: 12px; width: auto; text-decoration: none; cursor: pointer; display: inline-block; color: #525252;}
+.ibwp-spw-segment-row-add{color: #46b450;}
+.ibwp-spw-segment-row-delete{color: #dc3232;}

@@ -1,0 +1,9 @@
+/********* Public CSS for Admin Side *******/
+.dcdt-post-sett-table .wp-picker-container{margin-top: 10px;}
+.dcdt-post-sett-table td{vertical-align: top;}
+.dcdt-timer-image-prev { width: 350px; padding: 0 !important; margin: 0 !important; }
+/***** WooCommerce Custom Field CSS *****/
+.dcdt_sale_price_times_fields .form-field { width: 48%; }
+.dcdt_sale_price_times_fields .form-field:nth-child(1) { clear: both; float: left; }
+.dcdt_sale_price_times_fields .form-field:nth-child(2) { float: right; }
+.dcdt_sale_price_times_fields .form-field .short { width: 100%; vertical-align: middle; margin: 2px 0 0; padding: 5px; }

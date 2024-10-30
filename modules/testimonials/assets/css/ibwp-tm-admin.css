@@ -1,0 +1,6 @@
+.wp-list-table td.column-ibwp_tm_rating i{color: #ffb900; font-size: 17px;}
+.wp-list-table .ibwp_tm_image img{height:auto; width:auto; border:1px solid #ddd; max-height:50px; max-width:50px; padding:2px;}
+
+/* Form Fields CSS */
+.ibwp-tm-form-field-row-highlight{height: 350px; width:100%; background-color: #fcf67b; border: 2px dotted #d1c606; position: relative;}
+.ibwp-tm-form-field-row-highlight::before{content:'Drop Here'; line-height:0; display:block; text-align:center; position:absolute; top: 50%; left: 0; right: 0; font-weight: bold; font-size: 20px;}

@@ -1,0 +1,118 @@
+.ibwp-mp-popup-inr-wrap {position: relative;}
+.ibwp-mp-popup-inr {padding: 30px; color: #333; overflow-y: unset !important;}
+.ibwp-mp-popup-mheading {font-size:26px;}
+.ibwp-mp-popup-sheading {font-size:18px; margin-top: 15px;}
+.ibwp-mp-popup-content, 
+.ibwp-mp-secondary-con {margin-top: 15px;}
+.ibwp-mp-popup-content p, 
+.ibwp-mp-secondary-con p {margin: 0 0 15px 0;}
+.ibwp-mp-popup-content p:last-child, 
+.ibwp-mp-secondary-con p:last-child {margin:0;}
+.ibwp-mp-popup-close {margin-top: 15px; font-size: 12px; cursor: pointer; text-decoration: underline;}
+.ibwp-mp-popup-snote {font-size: 12px; margin: 15px 0 0 0;}
+.ibwp-mfp-mp-popup.mfp-ready.mfp-bg{opacity: 1;}
+.mfp-close.ibwp-mp-popup-close-btn {color: #fff; background: #333; border-radius: 100%; padding: 0; height: 25px; width: 25px; line-height: 25px; cursor: pointer; top: 10px; right: 10px; display: inline-block; opacity: 1; font-size: 22px; z-index: 1;}
+.ibwp-mp-btn {display: inline-block; text-align: center; padding: 10px 20px; color: #fff; background-color: #ccc; cursor: pointer; min-width: 60px; font-size: 16px; margin: 0; text-decoration: none; -webkit-transition: all .3s ease 0s; transition: all .3s ease 0s;}
+.ibwp-mp-btn:hover, .ibwp-mp-btn:focus, .ibwp-mp-btn:active { color: #fff; outline: none; opacity: 0.9; }
+.ibwp-mp-btn-1 {background-color: #16a126;}
+.ibwp-mp-btn-2 {background-color: #e01404;}
+.ibwp-or-text {margin: 10px 0; font-size: 16px; font-weight: 700;}
+
+/* Social Icon Start */
+.ibwp-mp-cta-wrap,
+.ibwp-mp-social-wrap { margin: 15px 0 0 0; }
+.ibwp-mp-social-wrap { font-size: 0; }
+.ibwp-mp-social-icon { display: inline-block; margin: 4px; text-decoration: none; }
+.ibwp-mp-social-icon span {font-size: 12px; line-height: normal; color: #fff; padding: 3px 10px; display: inline-block;}
+.ibwp-mp-social-icon .fa { display: inline-block; text-align: center; padding: 0; color: #fff; background-color: transparent; cursor: pointer; width: 30px; height: 30px; line-height: 30px; font-size: 16px; }
+.ibwp-mp-facebook-icon { background-color: #3b5998; }
+.ibwp-mp-twitter-icon { background-color: #00acee; }
+.ibwp-mp-linkedin-icon { background-color: #0e76a8; }
+.ibwp-mp-google-plus-icon { background-color: #CC3333; }
+.ibwp-mp-youtube-icon { background-color: #c4302b; }
+.ibwp-mp-pinterest-icon { background-color: #c8232c; }
+.ibwp-mp-instagram-icon { background-color: #3f729b; }
+.ibwp-mp-tumblr-icon { background-color: #34526f; }
+.ibwp-mp-flickr-icon { background-color: #ff0084; }
+.ibwp-mp-reddit-icon { background-color: #FF4301; }
+.ibwp-mp-whatsapp-icon { background-color: #00e676; }
+/* Social Icon End */
+
+/* Form Field Common Start */
+.ibwp-mp-form-fields {margin-top: 15px; max-width: 700px; margin-left: auto; margin-right: auto;}
+.ibwp-mp-form-fields textarea {resize: none;}
+.ibwp-mp-form-fields .ibwp-mp-form-ckbox-lbl {cursor: pointer; font-size: 14px;}
+.ibwp-mp-form-fields .ibwp-mp-form-field-row {margin: 0 0 15px 0; text-align: left;}
+.ibwp-mp-form-fields .ibwp-mp-form-lbl {font-size: 14px; margin-bottom: 3px; display: inline-block; text-align: left; cursor: pointer;}
+.ibwp-mp-form-fields .ibwp-mp-form-lbl span {color: #c4302b;}
+.ibwp-mp-form-fields .ibwp-mp-form-inp {font-size: 14px; line-height: normal; padding: 8px 10px; margin: 0 !important; background-color: #fff; border: 1px solid #b1b1b1; border-radius: 0; display: block; width: 100%;}
+.ibwp-mp-form-fields .ibwp-mp-form-ckbox-lbl input[type="checkbox"] {vertical-align: middle;}
+.ibwp-mp-form-fields .ibwp-mp-form-submit {text-align: center; padding: 9px 35px !important; margin: 0 !important; color: #fff; background-color: #555; cursor: pointer; font-size: 14px; text-decoration: none; background-image: none; border-radius: 0; border: none; box-shadow: none; -webkit-transition: all .3s ease 0s; transition: all .3s ease 0s; width: 100%;}
+.ibwp-mp-form-fields .ibwp-mp-form-submit:hover,
+.ibwp-mp-form-fields .ibwp-mp-form-submit:focus,
+.ibwp-mp-form-fields .ibwp-mp-form-submit:active {opacity: 0.8;}
+.ibwp-mp-form-fields .ibwp-error {text-align: center;}
+.ibwp-mp-form-fields .ibwp-mp-form-inp-err .ibwp-mp-form-inp {border: 1px solid #c4302b !important;}
+.ibwp-mp-form-fields .ibwp-mp-form-inp-err .ibwp-mp-form-lbl, .ibwp-mp-form-fields .ibwp-mp-form-inp-err .ibwp-mp-form-ckbox-lbl{color: #c4302b !important;}
+.ibwp-mp-form-fields .ibwp-loader {width: 18px; height: 18px;}
+/* Form Field Common End */
+
+/* Start - Modal Popup Position CSS */
+.mfp-wrap .ibwp-mp-popup { display: inline-block; }
+.ibwp-mfp-mp-popup .mfp-container { padding: 0; }
+.mfp-wrap.ibwp-mp-middle-center .mfp-content{ text-align: center; }
+.ibwp-mp-middle-center .ibwp-mp-popup{ margin: 20px auto; }
+/* End - Popup Position CSS */
+
+/* Credit Start */
+.ibwp-mp-credit-wrp { position: absolute; left: 0; right: 0; padding: 3px 0; line-height: 0; text-align: center; }
+.ibwp-mp-credit-wrp .ibwp-mp-credit-inr { background-color: #fff; font-size: 11px; padding: 3px 10px; display: inline-block; line-height: normal; border-radius: 3px; cursor: pointer; }
+.ibwp-mp-credit-inr img, 
+.ibwp-mp-credit-inr span {vertical-align: middle; display: inline-block;}
+/* credit End*/
+
+/* Start - Modal Popup Design 1 */
+.ibwp-mp-modal-popup.ibwp-mp-design-1 .ibwp-mp-popup-mheading {border-bottom: 3px solid #e5e5e5; padding-bottom: 10px; font-weight: 700;}
+.ibwp-mp-modal-popup.ibwp-mp-design-1 .ibwp-mp-popup-inr {padding: 30px 50px;}
+.ibwp-mp-modal-popup.ibwp-mp-design-1 .ibwp-mp-btn {width: 100%;}
+.ibwp-mp-modal-popup.ibwp-mp-design-1 .ibwp-mp-cta-wrap {max-width: 700px; margin-left: auto; margin-right: auto;}
+/* End - Modal Popup Design 1 */
+
+/* Start - Modal Popup Design 2 */
+.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-popup-inr-wrap .ibwp-bg-img-section {position: relative; overflow: hidden; z-index: -1; color: #4e2176;}
+.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-popup-inr-wrap .ibwp-bg-img-section:before {content: ""; position: absolute; right: 0; top: 0; bottom: 0; border-bottom-width: 1000px; border-bottom-style: solid; border-left: 150px solid transparent; background: transparent;}
+.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-popup-mheading {margin: 0;}
+.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-popup-content {margin: 20px auto;}
+.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-popup-con-bg {background-color: #4e2176;}
+.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-popup-inr {padding: 50px 25px 50px 10px; color: #fff;}
+.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-form-fields .ibwp-mp-form-field-row {text-align: right;}
+.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-form-fields .ibwp-mp-form-submit {background-color: #19cbfe;}
+.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-btn {min-width: 100px;}
+/* End - Modal Popup Design 2 */
+
+@media only screen and (max-width: 40em) {
+	.ibwp-mp-popup-inr {padding: 30px 15px;}
+	.ibwp-bg-img-section { height: 250px; }
+	.ibwp-mp-modal-popup.ibwp-mp-design-1 .ibwp-mp-popup-inr {padding: 20px;}
+	.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-popup-inr-wrap .ibwp-bg-img-section:before {content: none;}
+	.ibwp-mp-modal-popup.ibwp-mp-design-2 {text-align: center;}
+	.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-form-fields .ibwp-mp-form-field-row {text-align: left;}
+}
+
+@media only screen and (min-width: 40.0625em) {
+	.ibwp-display-table { display: table; width: 100%; height: 100%; }
+	.ibwp-display-table-cell { display: table-cell; float: none; vertical-align: middle; }
+	.ibwp-mp-modal-popup.ibwp-mp-design-1 .ibwp-display-flex, 
+	.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-display-flex{width: 100%; height: 100%; display: flex;}
+	.ibwp-mp-modal-popup.ibwp-mp-design-1 .ibwp-bg-img-section, 
+	.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-bg-img-section{width: 50%;}
+	.ibwp-mp-modal-popup.ibwp-mp-design-1 .ibwp-mp-popup-con-bg, 
+	.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-popup-con-bg{width: 50%; display: flex; flex-direction: column; overflow-y: auto;}
+	.ibwp-mp-modal-popup.ibwp-mp-design-1 .ibwp-mp-popup-con-bg.ibwp-no-image, 
+	.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-popup-con-bg.ibwp-no-image{width: 100%;}
+	.ibwp-mp-modal-popup.ibwp-mp-design-1 .ibwp-mp-popup-inr, 
+	.ibwp-mp-modal-popup.ibwp-mp-design-2 .ibwp-mp-popup-inr{margin: auto;}
+}
+@media only screen and (max-width: 768px) {
+	.ibwp-mfp-mp-popup .mfp-container { padding: 10px; }
+}

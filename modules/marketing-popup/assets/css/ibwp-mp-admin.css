@@ -1,0 +1,17 @@
+/****** General CSS ******/
+.ibwp-mp-behav-box-wrp .ibwp-radio{display: none;}
+.ibwp-mp-behav-box-wrp .ibwp-radio:checked + .ibwp-mp-behav-block{border: 2px solid #32373c;}
+.ibwp-mp-behav-block{border: 2px solid #dcdcdc; padding: 10px; text-align: center; color: #525252; cursor: pointer; display: block;}
+.ibwp-mp-behav-block .ibwp-mp-behav-title{font-weight: 600; font-size: 15px; display: block; margin: 5px 0 0 0;}
+.ibwp-mp-behav-block i{height: auto; width: auto; font-size: 30px; line-height: normal;}
+.ibwp-mp-meta-notify{bottom: -20px; position: fixed; right: 20px; max-width: 278px; width: 100%; background-color:#cce5ff; color:#004085; border: 1px solid #b8daff; padding: 10px; border-radius: 3px; box-sizing: border-box; font-weight: 600; min-width: 278px;}
+#ibwp-mp-popup-sett .inside{margin:0; padding:0;}
+#ibwp-mp-popup-sett .inside .ibwp-vtab-wrap{border: 0;}
+#ibwp-mp-popup-sett .form-table th{width: 170px;}
+.ibwp-mp-form-entries-wrap .wp-list-table .column-id{width: 80px;}
+
+/* Form Fields */
+.ibwp-mp-email-fields{display: block; margin-bottom: 8px;}
+.ibwp-mp-email-fields:last-child{margin-bottom: 0;}
+.ibwp-mp-form-field-row-highlight{height: 350px; width:100%; background-color: #fcf67b; border: 2px dotted #d1c606; position: relative;}
+.ibwp-mp-form-field-row-highlight::before{content:'Drop Here'; line-height:0; display:block; text-align:center; position:absolute; top: 50%; left: 0; right: 0; font-weight: bold; font-size: 20px;}
